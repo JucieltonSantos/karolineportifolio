@@ -130,10 +130,10 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
               </Typography>
               <CardContent>
                 <Typography component="p" variant="body1" fontSize="1.25rem">
-                  Tenho dois anos de experiência em técnicas odontológicas e
-                  possuo uma especialização em Saúde da Família, o que me
-                  permitiu desenvolver uma abordagem humanizada e focada no
-                  bem-estar dos pacientes.
+                  Tenho muita experiência e técnicas odontológicas e possuo uma
+                  especialização em Saúde da Família, o que me permitiu
+                  desenvolver uma abordagem humanizada e focada no bem-estar dos
+                  pacientes.
                 </Typography>
                 <Typography
                   fontSize="1.25rem"
