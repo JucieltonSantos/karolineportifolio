@@ -62,7 +62,7 @@ const HomeHero: React.FunctionComponent<HomeHeroProps> = (props) => {
             <Button
               variant="contained"
               startIcon={<WhatsAppIcon />}
-              href="https://wa.me/11958169432?text=Quero%20saber%20sobre%20o%20Atendimento%20Odontológico"
+              href="https://wa.me/5511958169432?text=Quero%20saber%20sobre%20o%20Atendimento%20Odontológico"
               target="_blank"
             >
               Agende sua consulta - Whatsapp

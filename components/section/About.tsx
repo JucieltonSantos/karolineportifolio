@@ -96,12 +96,12 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
           <Grid item xs={12} md={6} style={{ padding: 0 }}>
             <ImageWrapper>
               <Image
-                alt="John Doe profile image"
+                alt="Dra Karoline Maria"
                 layout="fill"
                 objectFit="cover"
                 objectPosition="center center"
                 onLoad={() => setIsLoaded(true)}
-                src="/home/karol_foto_2.png"
+                src="/home/karol_perfil_2.png"
               />
               {!isLoaded && (
                 <Skeleton
@@ -130,10 +130,12 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
               </Typography>
               <CardContent>
                 <Typography component="p" variant="body1" fontSize="1.25rem">
-                  Tenho muita experiência e técnicas odontológicas e possuo uma
-                  especialização em Saúde da Família, o que me permitiu
-                  desenvolver uma abordagem humanizada e focada no bem-estar dos
-                  pacientes.
+                  A odontologia sempre foi minha paixão, e ao longo dos anos,
+                  desenvolvi uma abordagem humanizada, focada no conforto e na
+                  segurança dos meus pacientes. Minha especialização em Saúde da
+                  Família me permitiu enxergar cada sorriso de forma única,
+                  proporcionando não apenas tratamentos, mas também experiências
+                  acolhedoras e personalizadas.
                 </Typography>
                 <Typography
                   fontSize="1.25rem"
@@ -145,11 +147,13 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
                     },
                   }}
                 >
-                  Ao longo da minha trajetória profissional, adquiri expertise
-                  em procedimentos estéticos e restauradores, incluindo
-                  extrações simples, próteses dentárias fixas (pino, coroa,
-                  onlay) e removíveis (prótese total, PPR com grampo, ponte
-                  móvel e flex).
+                  Com ampla experiência em procedimentos estéticos e
+                  restauradores, realizo extrações simples, próteses fixas
+                  (pino, coroa, onlay) e removíveis (prótese total, PPR com
+                  grampo, ponte móvel e flex). Também atuo com emergências
+                  endodônticas, periodontia (raspagem comum e subgengival),
+                  profilaxia, clareamento dental e avaliações clínicas
+                  detalhadas.
                 </Typography>
                 <Collapse
                   in={showMore}
@@ -162,15 +166,15 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
                   unmountOnExit
                 >
                   <Typography component="p" variant="body1" fontSize="1.25rem">
-                    Além disso, possuo experiência em emergências endodônticas,
-                    periodontia (raspagem comum e subgengival), profilaxia,
-                    avaliação clínica e clareamento dental. Minha metodologia de
-                    trabalho é pautada na excelência técnica, no atendimento
-                    personalizado e na busca por soluções inovadoras que
-                    garantam conforto e segurança aos pacientes. Tenho
-                    facilidade em trabalhar em equipe, boa comunicação e um
-                    olhar atento às necessidades individuais de cada pessoa que
-                    atendo.
+                    Meu compromisso é aliar técnica, inovação e um atendimento
+                    próximo e cuidadoso, sempre buscando soluções que realcem a
+                    beleza natural do sorriso e promovam a saúde bucal. Tenho
+                    facilidade em trabalhar em equipe, me comunico com empatia e
+                    acredito que um sorriso bem cuidado transforma não apenas a
+                    estética, mas também a autoestima e a qualidade de vida.
+                    <br />
+                    Se deseja um atendimento profissional e personalizado,
+                    ficarei feliz em cuidar do seu sorriso!
                   </Typography>
                 </Collapse>
               </CardContent>

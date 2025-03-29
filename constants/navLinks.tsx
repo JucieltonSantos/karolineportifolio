@@ -54,7 +54,7 @@ const navLinks: NavLink[] = [
   },
   {
     buttonProps: { color: "info", variant: "outlined" },
-    href: "https://wa.me/11958169432?text=Quero%20saber%20sobre%20o%20Atendimento%20Odontológico",
+    href: "https://wa.me/5511958169432?text=Quero%20saber%20sobre%20o%20Atendimento%20Odontológico",
     Icon: <WhatsAppIcon color="inherit" fontSize="inherit" />,
     label: "Whatsapp",
     order: 4,

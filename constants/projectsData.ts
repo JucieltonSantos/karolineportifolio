@@ -103,22 +103,6 @@ const projectsData: Project[] = [
       },
     ],
   }),
-  ProjectConstructor({
-    category: ["photography"],
-    date: dayjs().subtract(24, "week"),
-    id: "modelingphotoshoot",
-    postFileName: "bridephotoshoot",
-    title: "🎯 Nada pode parar uma mulher corajosa e determinada.",
-    images: [
-      {
-        alt: "Denstista mulher sorrindo, de jaleco branco e cabelo solto.",
-        height: 4074,
-        likes: 51,
-        src: "/projects/foto_1.jpeg",
-        width: 3260,
-      },
-    ],
-  }),
 ];
 
 export default projectsData;
