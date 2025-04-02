@@ -1,11 +1,12 @@
 // react
-import * as React from 'react';
+import * as React from "react";
 // next
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import { Analytics } from "@vercel/analytics/react";
 // @emotion
-import createEmotionServer from '@emotion/server/create-instance';
+import createEmotionServer from "@emotion/server/create-instance";
 // utility
-import createEmotionCache from 'utility/createEmotionCache';
+import createEmotionCache from "utility/createEmotionCache";
 
 export default class MyDocument extends Document {
   render() {
@@ -23,6 +24,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <Analytics />
         </body>
       </Html>
     );
@@ -32,28 +34,6 @@ export default class MyDocument extends Document {
 // `getInitialProps` belongs to `_document` (instead of `_app`),
 // it's compatible with static-site generation (SSG).
 MyDocument.getInitialProps = async (ctx) => {
-  // Resolution order
-  //
-  // On the server:
-  // 1. app.getInitialProps
-  // 2. page.getInitialProps
-  // 3. document.getInitialProps
-  // 4. app.render
-  // 5. page.render
-  // 6. document.render
-  //
-  // On the server with error:
-  // 1. document.getInitialProps
-  // 2. app.render
-  // 3. page.render
-  // 4. document.render
-  //
-  // On the client
-  // 1. app.getInitialProps
-  // 2. page.getInitialProps
-  // 3. app.render
-  // 4. page.render
-
   const originalRenderPage = ctx.renderPage;
 
   // You can consider sharing the same emotion cache between all the SSR requests to speed up performance.
@@ -75,7 +55,7 @@ MyDocument.getInitialProps = async (ctx) => {
   const emotionStyles = extractCriticalToChunks(initialProps.html);
   const emotionStyleTags = emotionStyles.styles.map((style) => (
     <style
-      data-emotion={`${style.key} ${style.ids.join(' ')}`}
+      data-emotion={`${style.key} ${style.ids.join(" ")}`}
       key={style.key}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: style.css }}
