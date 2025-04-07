@@ -1,5 +1,5 @@
 // react
-import * as React from 'react';
+import * as React from "react";
 // @mui
 import {
   Container,
@@ -8,29 +8,29 @@ import {
   GridProps,
   Typography,
   styled,
-} from '@mui/material';
+} from "@mui/material";
 // custom component
-import ContainerGrid from 'components/common/ContainerGrid';
-import SkillProgress from 'components/common/SkillProgress';
+import ContainerGrid from "components/common/ContainerGrid";
+import SkillProgress from "components/common/SkillProgress";
 // custom icons
 
 import PlaceIcon from "@mui/icons-material/Place";
 // context
-import ComponentsContext from 'context/componentsContext';
+import ComponentsContext from "context/componentsContext";
 // type
 interface SkillsProps {}
 
 const CustomContainer = styled(Container)<ContainerProps>(({ theme }) => ({
-  marginBottom: '5rem',
-  marginTop: '5rem',
-  scrollMarginTop: '2rem',
+  marginBottom: "5rem",
+  marginTop: "5rem",
+  scrollMarginTop: "2rem",
 }));
 
 const CustomGridItem = styled(Grid)<GridProps>(({ theme }) => ({
-  alignItems: 'center',
-  display: 'flex',
-  justifyContent: 'center',
-  marginBottom: '2rem',
+  alignItems: "center",
+  display: "flex",
+  justifyContent: "center",
+  marginBottom: "2rem",
 }));
 
 const Skills: React.FunctionComponent<SkillsProps> = (props) => {
@@ -50,7 +50,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
     {
       Icon: <PlaceIcon sx={{ color: "#ffd700", fontSize: 40 }} />,
       title: "Osasco",
-      subTitle: "Definindo",
+      subTitle: "Avenida Narciso Stulini 302, Sala 407 - Atrás da prefeitura",
     },
   ];
 
