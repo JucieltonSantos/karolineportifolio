@@ -20,6 +20,47 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="/favicon.ico" />
           <link rel="icon" type="image/png" href="/favicon.png" />
           <link rel="apple-touch-icon" href="/favicon.png" />
+
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="robots" content="index, follow" />
+          <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta name="author" content="Dra. Karoline Maria" />
+
+          <meta
+            property="og:title"
+            content="Dra. Karoline Maria - Dentista e Especialista"
+          />
+          <meta
+            property="og:description"
+            content="Consultório odontológico especializado em saúde bucal, estética e harmonização facial."
+          />
+          <meta property="og:image" content="/images/og-image.jpg" />
+          <meta
+            property="og:url"
+            content="https://www.drakarolinemaria.com.br"
+          />
+          <meta property="og:type" content="website" />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                name: "Clínica Dra. Karoline",
+                description:
+                  "Consultório odontológico especializado em saúde bucal, estética e harmonização facial.",
+                url: "https://www.drakarolinemaria.com.br/",
+                logo: "https://www.drakarolinemaria.com.br/home/logo_karol.png",
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: "+55 11958169432",
+                  contactType: "customer service",
+                  areaServed: "BR",
+                  availableLanguage: "Portuguese",
+                },
+              }),
+            }}
+          />
         </Head>
         <body>
           <Main />
