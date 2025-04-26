@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://drakarolinemaria.com.br/
+
+# Sitemaps
+Sitemap: https://drakarolinemaria.com.br/sitemap.xml
