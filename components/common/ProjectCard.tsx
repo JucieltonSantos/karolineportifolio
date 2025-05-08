@@ -1,8 +1,8 @@
 // react
-import * as React from 'react';
+import * as React from "react";
 // next
-import dynamic from 'next/dynamic';
-const Image = dynamic(() => import('next/image'));
+import dynamic from "next/dynamic";
+const Image = dynamic(() => import("next/image"));
 // @mui
 import {
   Box,
@@ -20,12 +20,12 @@ import {
   Typography,
   styled,
   useTheme,
-} from '@mui/material';
+} from "@mui/material";
 // @mui icons
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 // custom component
-import CustomButton from 'components/common/CustomButton';
+import CustomButton from "components/common/CustomButton";
 // type
 interface ProjectCardProps extends CardProps {
   imageAlt: string;
@@ -37,24 +37,24 @@ interface ProjectCardProps extends CardProps {
 
 const CustomCard = styled(Card)<CardProps>(({ theme }) => ({
   img: {
-    transition: 'all 0.5s ease-in-out',
+    transition: "all 0.5s ease-in-out",
   },
-  '&: hover': {
+  "&: hover": {
     img: {
-      transition: 'all 0.5s ease-in-out',
-      transform: 'scale(1.4)',
-      filter: 'blur(2px)',
-      WebkitFilter: 'blur(2px)',
+      transition: "all 0.5s ease-in-out",
+      transform: "scale(1.4)",
+      filter: "blur(2px)",
+      WebkitFilter: "blur(2px)",
     },
   },
 }));
 
 const ImageContainer = styled(Box)<BoxProps>(({ theme }) => ({
-  position: 'relative',
-  margin: '1rem',
-  height: '21rem',
+  position: "relative",
+  margin: "1rem",
+  height: "21rem",
   borderRadius: theme.shape.borderRadius,
-  overflow: 'hidden',
+  overflow: "hidden",
 }));
 
 const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
@@ -66,7 +66,7 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
   } = useTheme();
 
   return (
-    <CustomCard {...otherProps}>
+    <CustomCard {...otherProps} sx={{ cursor: "pointer" }}>
       <ImageContainer>
         <Image
           alt={imageAlt}
@@ -80,7 +80,7 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
         {!isLoaded && (
           <Skeleton
             variant="rectangular"
-            sx={{ backgroundColor: primary.main, height: '100%' }}
+            sx={{ backgroundColor: primary.main, height: "100%" }}
           />
         )}
       </ImageContainer>
@@ -93,11 +93,11 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
           )}
         </Typography>
       </CardContent>
-      <CardActions disableSpacing>
+      <CardActions disableSpacing sx={{ cursor: "pointer" }}>
         <List>
           <ListItem>
-            <ListItemIcon sx={{ minWidth: 'auto', marginRight: '0.5rem' }}>
-              <Icon color="primary" sx={{ display: 'flex' }}>
+            <ListItemIcon sx={{ minWidth: "auto", marginRight: "0.5rem" }}>
+              <Icon color="primary" sx={{ display: "flex" }}>
                 <FavoriteIcon color="inherit" />
               </Icon>
             </ListItemIcon>
@@ -106,7 +106,7 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
                 likes
               ) : (
                 <Skeleton
-                  sx={{ backgroundColor: primary.main, width: '2rem' }}
+                  sx={{ backgroundColor: primary.main, width: "2rem" }}
                 />
               )}
             </ListItemText>

@@ -1,5 +1,5 @@
 // react
-import React from 'react';
+import React from "react";
 // mui icons
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
@@ -7,7 +7,7 @@ import PlaceIcon from "@mui/icons-material/Place";
 import Person3Icon from "@mui/icons-material/Person3";
 import HomeIcon from "@mui/icons-material/Home";
 // type
-import { ButtonProps, IconProps } from '@mui/material';
+import { ButtonProps, IconProps } from "@mui/material";
 export interface NavLink {
   buttonProps?: ButtonProps;
   href: string;
@@ -53,11 +53,20 @@ const navLinks: NavLink[] = [
     sidebarVisible: true,
   },
   {
+    buttonProps: { color: "info" },
+    href: "/blog",
+    Icon: <CameraAltIcon color="inherit" fontSize="inherit" />,
+    label: "Blog",
+    order: 4,
+    sidebarOrder: 2,
+    sidebarVisible: true,
+  },
+  {
     buttonProps: { color: "info", variant: "outlined" },
     href: "https://wa.me/5511958169432?text=Quero%20saber%20sobre%20o%20Atendimento%20Odontológico",
     Icon: <WhatsAppIcon color="inherit" fontSize="inherit" />,
     label: "Whatsapp",
-    order: 4,
+    order: 5,
     sidebarOrder: 3,
     sidebarVisible: true,
   },

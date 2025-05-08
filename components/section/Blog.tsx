@@ -6,22 +6,15 @@ import { useRouter } from "next/router";
 import { Box, Grid, Grow, Typography } from "@mui/material";
 // custom component
 import ContainerGrid from "components/common/ContainerGrid";
-import TypingEffect from "components/common/TypingEffect";
 // custom context
 import ConstantsContext from "context/constantsContext";
 import ProjectCard from "components/common/ProjectCard";
-import calcArrayOfObj from "utility/calcArrayOfObj";
-import Filter, { FilterOption } from "components/common/Filter";
-import sortArrayOfObj from "utility/sortArrayOfObj";
-import { Project } from "constants/projectsData";
 // type
-interface ProjectsSectionProps {}
+interface BlogProps {}
 
-const ProjectsSection: React.FunctionComponent<ProjectsSectionProps> = (
-  props
-) => {
-  const { projects } = React.useContext(ConstantsContext);
-  const [projectsToRender, setProjectsToRender] = React.useState(projects);
+const Blog: React.FunctionComponent<BlogProps> = (props) => {
+  const { blogPosts } = React.useContext(ConstantsContext);
+  const [projectsToRender, setProjectsToRender] = React.useState(blogPosts);
   const router = useRouter();
 
   return (
@@ -30,9 +23,9 @@ const ProjectsSection: React.FunctionComponent<ProjectsSectionProps> = (
         component="h2"
         variant="h3"
         textAlign="center"
-        marginTop="20%"
+        marginTop="150px"
       >
-        Atendimentos
+        Posts
       </Typography>
       <Box
         color="text.secondary"
@@ -50,19 +43,24 @@ const ProjectsSection: React.FunctionComponent<ProjectsSectionProps> = (
         }}
       >
         {projectsToRender
-          ? projectsToRender.map((project, index) => (
+          ? projectsToRender.map((blogPosts, index) => (
               <Grow
                 in={true}
-                key={project.title + index}
+                key={blogPosts.title + index}
                 timeout={(index + 1) * 500}
               >
                 <Grid item xs={12} sm={6} md={4} xl={3}>
                   <ProjectCard
-                    imageAlt={project.images[0].alt}
-                    imageSrc={project.images[0].src}
-                    title={project.title}
-                    likes={calcArrayOfObj(project.images, "likes")}
-                    onButtonClick={() => router.push(`/projects/${project.id}`)}
+                    imageAlt={blogPosts.image.alt}
+                    imageSrc={blogPosts.image.src}
+                    title={blogPosts.title}
+                    likes={blogPosts.image.likes}
+                    onClick={() => {
+                      {
+                        router.push(`/posts/${blogPosts.id}`);
+                        console.log(blogPosts.id);
+                      }
+                    }}
                     sx={{
                       maxWidth: "21rem",
                       marginLeft: "auto",
@@ -78,4 +76,4 @@ const ProjectsSection: React.FunctionComponent<ProjectsSectionProps> = (
   );
 };
 
-export default ProjectsSection;
+export default Blog;
