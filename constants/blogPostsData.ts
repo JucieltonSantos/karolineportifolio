@@ -36,6 +36,35 @@ const blogPosts: BlogPost[] = [
     title:
       "Dicas incríveis para um Sorriso Bem Cuidado: Grandes Conselhos de uma Dentista em Osasco",
   }),
+  createPost({
+    category: ["photography"],
+    date: dayjs().subtract(6, "week"),
+    id: "primeira-consulta-dentista-infantil-em-osasco",
+    image: {
+      alt: "O Momento Ideal para a Primeira Consulta: Orientações de um Dentista para crianças em Osasco",
+      height: 1080,
+      likes: 120,
+      src: "/posts/primeira-consulta-dentista-infantil-em-osasco.png",
+      width: 1080,
+    },
+    filename: "primeira-consulta-dentista-infantil-em-osasco",
+    title:
+      "O Momento Ideal para a Primeira Consulta: Orientações de um Dentista para crianças em Osasco",
+  }),
+  createPost({
+    category: ["photography"],
+    date: dayjs().subtract(6, "week"),
+    id: "aparelho-invisivel-em-osasco-vale-a-pena",
+    image: {
+      alt: "Aparelho Invisível em Osasco Vale a Pena Investir?",
+      height: 1080,
+      likes: 83,
+      src: "/posts/aparelho-invisivel-em-osasco-vale-a-pena.png",
+      width: 1080,
+    },
+    filename: "aparelho-invisivel-em-osasco-vale-a-pena",
+    title: "Aparelho Invisível em Osasco Vale a Pena Investir?",
+  }),
 ];
 
 export default blogPosts;
