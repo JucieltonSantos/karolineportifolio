@@ -72,13 +72,28 @@ const blogPosts: BlogPost[] = [
     image: {
       alt: "Atendimento Humanizado para Pessoas Especiais em Osasco: Um Compromisso meu Dra. Karoline Maria",
       height: 1080,
-      likes: 83,
+      likes: 126,
       src: "/posts/atendimento-odontologico-pessoas-especiais-em-osasco.png",
       width: 1080,
     },
     filename: "atendimento-odontologico-pessoas-especiais-em-osasco",
     title:
       "Atendimento Humanizado para Pessoas Especiais em Osasco: Um Compromisso meu Dra. Karoline Maria",
+  }),
+  createPost({
+    category: ["photography"],
+    date: dayjs().subtract(6, "week"),
+    id: "dra-karoline-maria-trabalho-voluntario-e-compromisso-social",
+    image: {
+      alt: "Mas mais do que Dentista: Dra. Karoline Maria e o Engajamento com a Comunidade",
+      height: 1080,
+      likes: 91,
+      src: "/posts/dra-karoline-maria-trabalho-voluntario-e-compromisso-social.png",
+      width: 1080,
+    },
+    filename: "dra-karoline-maria-trabalho-voluntario-e-compromisso-social",
+    title:
+      "Mas mais do que Dentista: Dra. Karoline Maria e o Engajamento com a Comunidade",
   }),
 ];
 
