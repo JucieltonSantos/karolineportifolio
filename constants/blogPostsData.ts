@@ -65,6 +65,21 @@ const blogPosts: BlogPost[] = [
     filename: "aparelho-invisivel-em-osasco-vale-a-pena",
     title: "Aparelho Invisível em Osasco Vale a Pena Investir?",
   }),
+  createPost({
+    category: ["photography"],
+    date: dayjs().subtract(6, "week"),
+    id: "atendimento-odontologico-pessoas-especiais-em-osasco",
+    image: {
+      alt: "Atendimento Humanizado para Pessoas Especiais em Osasco: Um Compromisso meu Dra. Karoline Maria",
+      height: 1080,
+      likes: 83,
+      src: "/posts/atendimento-odontologico-pessoas-especiais-em-osasco.png",
+      width: 1080,
+    },
+    filename: "atendimento-odontologico-pessoas-especiais-em-osasco",
+    title:
+      "Atendimento Humanizado para Pessoas Especiais em Osasco: Um Compromisso meu Dra. Karoline Maria",
+  }),
 ];
 
 export default blogPosts;
