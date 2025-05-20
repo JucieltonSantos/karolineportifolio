@@ -13,6 +13,8 @@ import {
   Card,
 } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import dynamic from "next/dynamic";
+const Image = dynamic(() => import("next/image"));
 
 export default function KarolzinhaSection() {
   return (
@@ -20,15 +22,14 @@ export default function KarolzinhaSection() {
       <Grid container spacing={6} alignItems="center">
         {/* Imagem da Karolzinha */}
         <Grid item xs={12} md={6}>
-          <Box
-            component="img"
-            src="/home/karolzinha.png" // Troque para o caminho da sua imagem!
-            alt="Karolzinha, assistente virtual"
-            sx={{
-              width: "100%",
-              borderRadius: 4,
-              boxShadow: 4,
-            }}
+          <Image
+            alt={"Karolzinha, assistente virtual"}
+            src={"/home/karolzinha.png"}
+            layout="responsive"
+            objectFit="cover"
+            width={400}
+            height={800}
+            quality={100}
           />
         </Grid>
 

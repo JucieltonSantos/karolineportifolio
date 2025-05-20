@@ -1,19 +1,19 @@
 // react
-import * as React from 'react';
+import * as React from "react";
 
 import dynamic from "next/dynamic";
 const Image = dynamic(() => import("next/image"));
 
 // next
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 // @mui
-import { Box, Button, Typography, useTheme } from '@mui/material';
+import { Box, Button, Typography, useTheme } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 // custom components
-import CenterBox from 'components/common/CenterBox';
-import TypingEffect from 'components/common/TypingEffect';
-import ScrollDown from 'components/common/ScrollDown';
+import CenterBox from "components/common/CenterBox";
+import TypingEffect from "components/common/TypingEffect";
+import ScrollDown from "components/common/ScrollDown";
 // type
 interface HomeHeroProps {}
 
@@ -33,6 +33,7 @@ const HomeHero: React.FunctionComponent<HomeHeroProps> = (props) => {
       >
         <Box mt={{ xs: "240px", md: "0px" }}>
           <Image
+            priority
             alt="Foto da dra.karoline Maria"
             width={740}
             height={490}
