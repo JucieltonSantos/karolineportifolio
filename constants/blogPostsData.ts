@@ -95,6 +95,21 @@ const blogPosts: BlogPost[] = [
     title:
       "Mas mais do que Dentista: Dra. Karoline Maria e o Engajamento com a Comunidade",
   }),
+  createPost({
+    category: ["photography"],
+    date: dayjs().subtract(6, "week"),
+    id: "restauracao-estetica-dente-quebrado-em-osasco",
+    image: {
+      alt: "Estética em Osasco: Recuperando Sorrisos e Autoestima com Dra. Karoline Maria",
+      height: 1080,
+      likes: 192,
+      src: "/posts/restauracao-estetica-dente-quebrado-em-osasco.png",
+      width: 1080,
+    },
+    filename: "restauracao-estetica-dente-quebrado-em-osasco",
+    title:
+      "Estética em Osasco: Recuperando Sorrisos e Autoestima com Dra. Karoline Maria",
+  }),
 ];
 
 export default blogPosts;
