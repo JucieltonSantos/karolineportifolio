@@ -38,7 +38,7 @@ const HomeHero: React.FunctionComponent<HomeHeroProps> = (props) => {
             width={740}
             height={490}
             quality={100}
-            src="/home/karol_foto_consultorio_2.png"
+            src="/home/karol_foto_consultorio_2.webp"
           />
         </Box>
         <Box>
