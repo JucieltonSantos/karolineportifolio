@@ -13,6 +13,7 @@ import ConstantsContext from "context/constantsContext";
 import type { NextPage } from "next";
 import ServicesSection from "components/section/ServicesSection";
 import KarolzinhaSection from "components/section/KarolzinhaSection";
+import VideoSection from "components/section/VideoSection";
 
 const Home: NextPage = () => {
   const { pages } = React.useContext(ConstantsContext);
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
     <>
       <MainLayout pageData={pages!.home}>
         <HomeHero />
+        <VideoSection />
         <About />
         <ServicesSection />
         <KarolzinhaSection />
