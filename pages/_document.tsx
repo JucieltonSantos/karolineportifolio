@@ -17,6 +17,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
+          <link rel="canonical" href="https://drakarolinemaria.com.br/" />
           <link rel="shortcut icon" href="/favicon.ico" />
           <link rel="icon" type="image/png" href="/favicon.png" />
           <link rel="apple-touch-icon" href="/favicon.png" />
