@@ -35,7 +35,7 @@ export default function VideoSection() {
   };
 
   return (
-    <Container sx={{ py: 4, backgroundColor: "#f5e6d3" }}>
+    <Container sx={{ py: 4, backgroundColor: "#f5e6d3" }} id="video">
       <Typography
         variant="h4"
         align="center"
