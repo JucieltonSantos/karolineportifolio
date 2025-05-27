@@ -110,6 +110,21 @@ const blogPosts: BlogPost[] = [
     title:
       "Estética em Osasco: Recuperando Sorrisos e Autoestima com Dra. Karoline Maria",
   }),
+  createPost({
+    category: ["photography"],
+    date: dayjs().subtract(6, "week"),
+    id: "dentista-em-osasco-com-fone-de-ouvido-e-cancelamento-de-ruido",
+    image: {
+      alt: "Ir ao dentista em Osasco nunca foi tão relaxante: conheça a nova experiência da Clínica Dra. Karoline Maria",
+      height: 1080,
+      likes: 451,
+      src: "/posts/dentista-em-osasco-com-fone-de-ouvido-e-cancelamento-de-ruido.png",
+      width: 1080,
+    },
+    filename: "dentista-em-osasco-com-fone-de-ouvido-e-cancelamento-de-ruido",
+    title:
+      "Ir ao dentista em Osasco nunca foi tão relaxante: conheça a nova experiência da Clínica Dra. Karoline Maria",
+  }),
 ];
 
 export default blogPosts;

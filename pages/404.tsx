@@ -1,10 +1,10 @@
 // react
-import * as React from 'react';
+import * as React from "react";
 // @mui
-import { Box, Typography } from '@mui/material';
+import { Box, Typography } from "@mui/material";
 // custom component
-import CenterBox from 'components/common/CenterBox';
-import TextLink from 'components/common/TextLink';
+import CenterBox from "components/common/CenterBox";
+import TextLink from "components/common/TextLink";
 // type
 interface Custom404Props {}
 
@@ -16,19 +16,19 @@ const Custom404: React.FunctionComponent<Custom404Props> = (props) => {
           component="h1"
           variant="h6"
           sx={{
-            marginRight: '1rem',
-            paddingRight: '1rem',
-            borderRight: '2px solid currentcolor',
+            marginRight: "1rem",
+            paddingRight: "1rem",
+            borderRight: "2px solid currentcolor",
           }}
         >
           404
         </Typography>
         <Typography component="p" variant="body1">
-          This page could not be found.
+          Desculpe, essa página não foi encotrada.
         </Typography>
       </Box>
-      <TextLink href="/" style={{ position: 'absolute', bottom: '10%' }}>
-        &larr; Back to Home
+      <TextLink href="/" style={{ position: "absolute", bottom: "10%" }}>
+        &larr; Volte para a Home
       </TextLink>
     </CenterBox>
   );
